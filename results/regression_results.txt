@@ -1,0 +1,64 @@
+Simple OLS Regression
+=====================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        Life Expectancy   R-squared:                       0.724
+Model:                            OLS   Adj. R-squared:                  0.720
+Method:                 Least Squares   F-statistic:                     165.6
+Date:                Thu, 01 Oct 2026   Prob (F-statistic):           2.73e-19
+Time:                        06:03:40   Log-Likelihood:                -168.25
+No. Observations:                  65   AIC:                             340.5
+Df Residuals:                      63   BIC:                             344.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const             52.5299      0.647     81.176      0.000      51.237      53.823
+GDP per Capita     0.0110      0.001     12.869      0.000       0.009       0.013
+==============================================================================
+Omnibus:                       11.371   Durbin-Watson:                   0.120
+Prob(Omnibus):                  0.003   Jarque-Bera (JB):               11.775
+Skew:                          -1.014   Prob(JB):                      0.00277
+Kurtosis:                       3.485   Cond. No.                     1.21e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.21e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+Multiple OLS Regression
+=======================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        Life Expectancy   R-squared:                       0.967
+Model:                            OLS   Adj. R-squared:                  0.963
+Method:                 Least Squares   F-statistic:                     223.8
+Date:                Thu, 01 Oct 2026   Prob (F-statistic):           3.72e-17
+Time:                        06:03:40   Log-Likelihood:                -9.3261
+No. Observations:                  27   AIC:                             26.65
+Df Residuals:                      23   BIC:                             31.84
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                    42.6617      2.668     15.991      0.000      37.143      48.180
+GDP per Capita            0.0019      0.001      2.322      0.029       0.000       0.004
+Urban Population          0.4650      0.114      4.080      0.000       0.229       0.701
+Access to Electricity     0.0396      0.045      0.881      0.387      -0.053       0.133
+==============================================================================
+Omnibus:                       18.015   Durbin-Watson:                   1.722
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               21.113
+Skew:                          -1.665   Prob(JB):                     2.60e-05
+Kurtosis:                       5.770   Cond. No.                     4.26e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.26e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
